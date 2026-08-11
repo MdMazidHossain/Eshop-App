@@ -1,3 +1,4 @@
+
 # ============================================
 # STAGE 1: Builder
 # ============================================
@@ -6,7 +7,9 @@ FROM node:20-alpine AS builder
 WORKDIR /app
 
 COPY package*.json ./
-RUN npm ci
+
+# npm ci → npm install (package-lock.json না থাকলে)
+RUN npm install
 
 COPY . .
 RUN npm test || true
