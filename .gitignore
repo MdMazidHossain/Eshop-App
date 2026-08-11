@@ -1,0 +1,31 @@
+# Node
+node_modules/
+npm-debug.log
+package-lock.json
+
+# Environment
+.env
+.env.local
+
+# SSL
+*.pem
+
+# Docker
+*.pid
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backup
+*.sql
+*.sql.gz
+
+# Monitoring
+prometheus-data/
+grafana-data/
